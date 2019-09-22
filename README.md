@@ -1,7 +1,5 @@
 # poc-swagger-userservice
 
-WIP
-
 REST Api java projects frequently generate the Open API (Swagger) specification from the controllers.
 This 'Code First' approach is usually more convenient for the developer mostly because it is faster to implement than the 'Design First' approach.
 The differences between those two approaches is nicely described here: https://swagger.io/blog/api-design/design-first-or-code-first-api-development/
