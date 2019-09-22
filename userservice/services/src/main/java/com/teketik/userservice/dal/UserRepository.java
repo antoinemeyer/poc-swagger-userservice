@@ -1,9 +1,11 @@
 package com.teketik.userservice.dal;
 
+import com.teketik.userservice.domain.Gender;
 import com.teketik.userservice.domain.User;
 
 import org.springframework.stereotype.Repository;
 
+import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
@@ -13,9 +15,7 @@ public class UserRepository {
 
     private static final Map<Long, User> REPOSITORY = new HashMap<>(3);
     static {
-        REPOSITORY.put(1L, new User(1L, "first 1", "last 1"));
-        REPOSITORY.put(2L, new User(2L, "first 2", "last 2"));
-        REPOSITORY.put(3L, new User(3L, "first 3", "last 3"));
+        REPOSITORY.put(1L, new User(1L, "first 1", "last 1", LocalDate.of(1950, 1, 1), Gender.MALE));
     }
     
     public Optional<User> findById(Long id) {
